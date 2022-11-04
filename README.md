@@ -1,4 +1,4 @@
-Modified from another project to be used with gmail.
+Modified from another project to be used with gmail.\n
 EmailAddresses.txt is where you put the recievers mail
 IpAddresses.txt is the ips you want to ping
 Name.txt is the name of those addresses in the same order
