@@ -5,8 +5,8 @@ from socket import gaierror
 from email.mime.text import MIMEText
 
 
-EMAIL = 'pingermikael@gmail.com'
-APP_PASSWORD = 'qrnlgclvotopvzfp'
+EMAIL = '...@gmail.com'
+APP_PASSWORD = '...'
 
 quitint = 0
 
