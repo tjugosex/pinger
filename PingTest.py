@@ -12,8 +12,7 @@ quitint = 0
 
 def main():
 
-    ############################################
-    #Open IP address file and separate ip addresses by comma
+   
     camIpDocument = open("IpAddresses.txt","r")
     hostsList = str(camIpDocument.read())
     hostsList = hostsList.rstrip()
@@ -21,8 +20,7 @@ def main():
     HOSTS = list(hostsList.split(","))
     camIpDocument.close()
 
-    ############################################
-    #open cam names document this includes all the hostnames you want to pair with the ip addresses
+    
     nameDocument = open("Name.txt","r")
     hostsNames = str(nameDocument.read())
     hostsNames = hostsNames.rstrip()
@@ -33,15 +31,15 @@ def main():
     emailDocument = open("EmailAddresses.txt","r")
     emailNames = str(emailDocument.read())
     emailNames = emailNames.rstrip()
-    #split cam names into list
+    
     emailAddressList = list(emailNames.split(","))
     emailDocument.close()
     ############################################
 
-    #send cam names and IP addresses to ping function
+    
     Ping_Test(HOSTS,cameraNames,emailAddressList)
 def Ping_Test(hosts,camHostName,recipients):
-    #ping every ip address in the CamIpAddresses.txt file
+    
     i = 0
     while i < len(hosts):
         response = ping(hosts[i], verbose=True)
@@ -71,7 +69,7 @@ def Send_Email(ip,name,receiver):
     except Exception as e:
         print(e)
         print('Something went wrong...')
-    #define the SMTP server separately here:
+    
     
 def loop():
     global quitint
