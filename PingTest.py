@@ -16,7 +16,7 @@ def main():
     camIpDocument = open("IpAddresses.txt","r")
     hostsList = str(camIpDocument.read())
     hostsList = hostsList.rstrip()
-    #split string into list from commas
+
     HOSTS = list(hostsList.split(","))
     camIpDocument.close()
 
@@ -24,7 +24,7 @@ def main():
     nameDocument = open("Name.txt","r")
     hostsNames = str(nameDocument.read())
     hostsNames = hostsNames.rstrip()
-    #split cam names into list
+ 
     cameraNames = list(hostsNames.split(","))
     nameDocument.close()
     ############################################
